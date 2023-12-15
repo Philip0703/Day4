@@ -1,0 +1,27 @@
+
+
+    <img class="dimg" src="https://www.savaari.com/blog/wp-content/uploads/2023/07/kochi_21.webp">
+    
+    <div  class="text-container">
+        <h2 style="text-align: center;">GOD'S OWN COUNTRY</h2>
+        <p style="text-align: center;">A True Beauty!</p>
+    </div>
+
+
+
+<div class="row" id="district">
+    @for(item of districts;track item.id){
+        <div class="col-3">
+           <div class="card m-3" style="width: 18rem;">
+            <a [routerLink]="['/districts',item.id]"> <img 
+                src="{{item.image}}" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 style="text-align: center;" class="card-title ">{{item.title}}</h5>
+                    <p class="card-text">{{item.content| slice: 0:200}}....see more  </p>
+                </div>
+            </div>
+        
+        </div>
+        
+    }
+</div>
