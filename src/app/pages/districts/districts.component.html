@@ -18,7 +18,7 @@
                 src="{{item.image}}" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                     <h5 style="text-align: center;" class="card-title ">{{item.title}}</h5>
-                    <p class="card-text">{{item.content| slice: 0:200}}....see more  </p>
+                    <p class="card-text">{{item.content| slice: 0:200}}.... <a [routerLink]="['/districts',item.id]">see more </a> </p>
                 </div>
             </div>
         
